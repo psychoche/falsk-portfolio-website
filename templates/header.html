@@ -1,0 +1,66 @@
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate" />
+    <meta content="Mashup templates have been developped by Orson.io team" name="author">
+  
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
+    <link href="./static/assets/favicon.ico" rel="icon">
+  
+    <title>{{ title }}</title>  
+  
+  <link href="./static/main.3f6952e4.css" rel="stylesheet"></head>
+ 
+  {% if 'I did it' in title %}
+        <body class="">
+    {% else %}
+        <body class="minimal">
+  {% endif %}
+  <div id="site-border-left"></div>
+  <div id="site-border-right"></div>
+  <div id="site-border-top"></div>
+  <div id="site-border-bottom"></div>
+  <!-- Add your content of header -->
+  <header>
+    {% if 'I did it' in title %}
+    <nav class="navbar  navbar-fixed-top navbar-default">
+    {% else %}
+    <nav class="navbar  navbar-fixed-top navbar-inverse">
+    {% endif %}
+      <div class="container">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+  
+        <div class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav ">
+            <li><a href="/" title="">01 : Home</a></li>
+            <li><a href="works" title="">02 : Works</a></li>
+            <li><a href="about" title="">03 : About me</a></li>
+            <li><a href="contact" title="">04 : Contact</a></li>
+          </ul>
+
+          {% if 'I did it' in title %}
+          <ul class="nav navbar-nav navbar-right navbar-small visible-md visible-lg">
+            <li><a href="/" title="" class="active">001</a></li>
+            <li><a href="/" title="">002</a></li>
+            <li><a href="/" title="">003</a></li>
+            <li><a href="/" title="">004</a></li>
+            <li><a href="/" title="">005</a></li>
+            <li><a href="/" title="">006</a></li>
+          </ul>
+          {% endif %}
+  
+  
+        </div> 
+      </div>
+    </nav>
+  </header>
